@@ -82,7 +82,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Handler Guide-dog Interaction (HGI) Dataset</h1>
+          <h1 class="title is-1 publication-title"><b>GuideNav:</b> User-Informed Design and Navigation Assistance Comparable to Guide Dogs</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://www.umass.edu/">Author 1/a><sup>1</sup>,</span>
@@ -252,32 +252,14 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            Research on mobile assistive systems for blind and low-vision (BLV) individuals spans five decades, beginning in 1976. However, mobile navigation systems that mimic how guide dogs assist BLV people remain rare. One critical missing component is the lack of understanding of how guide dogs and BLV handlers navigate real-world environments. In this paper, we address this gap by defining a guide-dog–inspired navigation setup based on a comprehensive human study involving interviews with 26 guide dog handlers, 2 white cane users, 5 guide dog trainers, 1 O\&M trainer, 10 hours of observing guide dog–assisted walking, and 3 hours of blindfolded walking sessions guided by six different guide dogs.
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+          Based on these findings, we developed <b>GuideNav</b>, a vision-only, teach-and-repeat navigation system. Similar to how guide dogs are trained and assist their handlers, GuideNav autonomously repeats a path demonstrated by a sighted person using a robot. The system builds a topological representation of the taught route, integrates visual place recognition with temporal filtering, and employs a learned relative pose estimator to provide input to the controller—all without relying on heavy, power-hungry sensors such as LiDAR.
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
-          </p>
+          In field tests, GuideNav consistently achieved kilometer-scale route following across five outdoor environments, maintaining reliability despite noticeable appearance changes between teach and repeat runs. A user study with 3 guide dog handlers and one guide dog trainer confirmed the system’s feasibility, marking (to our knowledge) the first demonstration of a quadruped mobile system retrieving a path in a manner comparable to guide dogs.
+        </p>
         </div>
       </div>
     </div>
@@ -288,7 +270,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+          <iframe src="https://www.youtube.com/watch?v=9Y7Gvbw0qr4&t=26s"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
