@@ -20,13 +20,24 @@ function setInterpolationImage(i) {
 }
 
 function toggleSection(id) {
-  var element = document.getElementById(id);
-  if (element.style.display === "none" || element.style.display === "") {
-    element.style.display = "block";
+  var content = document.getElementById(id);
+  var icon = content.previousElementSibling.querySelector('.icon i');
+
+  if (content.style.display === "none" || content.style.display === "") {
+    content.style.display = "block";
+    icon.classList.add('rotate');
   } else {
-    element.style.display = "none";
+    content.style.display = "none";
+    icon.classList.remove('rotate');
   }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Hide all collapsible content sections by default
+    document.querySelectorAll('.collapsible-content').forEach(function(content) {
+        content.style.display = 'none';
+    });
+});
 
 
 $(document).ready(function() {

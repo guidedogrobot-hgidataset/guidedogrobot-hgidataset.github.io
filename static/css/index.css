@@ -156,6 +156,8 @@ body {
   border-radius: 5px;
 }
 
+
+
 .is-clickable {
   cursor: pointer;
   -webkit-touch-callout: none;
@@ -164,10 +166,19 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  color: #000;
 }
 
 .is-clickable:hover {
-  color: #3273dc; /* A Bulma-like blue for the hover effect */
+  color: #3273dc;
+}
+
+.is-clickable .icon {
+  transition: transform 0.2s ease-in-out;
+}
+
+.is-clickable .icon.rotate {
+  transform: rotate(90deg);
 }
 
 .collapsible-content {
