@@ -19,6 +19,15 @@ function setInterpolationImage(i) {
   $('#interpolation-image-wrapper').empty().append(image);
 }
 
+function toggleSection(id) {
+  var element = document.getElementById(id);
+  if (element.style.display === "none" || element.style.display === "") {
+    element.style.display = "block";
+  } else {
+    element.style.display = "none";
+  }
+}
+
 
 $(document).ready(function() {
     // Check for click events on the navbar burger icon

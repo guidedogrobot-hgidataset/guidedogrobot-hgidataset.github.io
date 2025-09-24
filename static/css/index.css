@@ -155,3 +155,21 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+.is-clickable {
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.is-clickable:hover {
+  color: #3273dc; /* A Bulma-like blue for the hover effect */
+}
+
+.collapsible-content {
+  margin-left: 20px;
+}
