@@ -268,22 +268,52 @@
         <h2 class="title is-3 has-text-centered">Dataset Description</h2>        
         <div class="content has-text-justified">
           <p>
-            <strong>GuideData</strong> (Handler–Guide dog Interaction) dataset captures how blind and low-vision (BLV)
-            individuals work with guide dogs in real-world contexts. It includes:
+            <strong>GuideData</strong> dataset captures how blind and low-vision (BLV) individuals work with guide dogs in real-world contexts. 
           </p>
 
+          <p>The dataset is composed of five key elements:</p>
           <ul>
-            <li>Semi-structured interviews with guide dog handlers and trainers.</li>
-            <li>Video observations of daily navigation and matching training sessions.</li>
-            <li>Blindfolded walking sessions with trained guide dogs, documenting both capabilities and limitations.</li>
-            <li>Supplementary data such as pulling-force measurements and handler/trainer feedback on robotic guide dog systems.</li>
+            <li><strong>Handler & Trainer Interviews:</strong> Transcripts from semi-structured interviews on the daily use, training, and deployment of guide dogs.</li>
+            <li><strong>Navigation Observations:</strong> Videos of experienced handlers and their guide dogs navigating familiar, real-world environments.</li>
+            <li><strong>Matching Training Observations:</strong> Videos documenting the initial familiarization process between a handler and a new guide dog.</li>
+            <li><strong>Author Blindfold Walks:</strong> Video recordings of supervised, blindfolded walking sessions to directly experience and document handler-dog interactions and navigational cues.</li>
+            <li><strong>Supplementary Data:</strong> Includes feedback on robotic guide dog systems and force measurements quantifying the pull from a guide dog's harness.</li>
           </ul>
 
+          <h4 class="title is-4">Participants & Processing</h4>
           <p>
-            All recordings are anonymized, with participant identities protected and faces blurred. This is the first open
-            dataset of its kind, providing rich insights into guide dog–assisted navigation to inform the design of robotic
-            guide dog systems and accessible navigation technologies.
+            The study includes 40 anonymized participants, including blind and low-vision (BLV) individuals (guide dog and cane users), professional guide dog trainers, and one O&M specialist. Participants had an average of over 24 years of experience using navigation aids.
           </p>
+          <p style="margin-bottom: 30px;">
+            To protect privacy, all videos were processed to blur faces and license plates, and all personally identifiable information was removed from transcripts. To our knowledge, this is the first comprehensive dataset of its kind. It is available on <strong>Kaggle</strong> under a <strong>CC0 license</strong> to support the development of future assistive navigation systems.
+          </p>
+
+          <h4 class="title is-4">Dataset Skeleton</h4>
+          <p style="margin-bottom: 12px;">The uploaded dataset on Kaggle is organized in a folder structure. The structure is visualized below: </p>
+            <pre style="text-align: left; white-space: pre-wrap;">
+              <code>
+                guidedata-upload/
+                ├── IRB-1(74)/
+                │   ├── Blindfold in Fidelco (5-6)/
+                │   │   ├── images/  - Photos from blindfolded walking sessions at Fidelco
+                │   │   └── videos/  - Video recordings from blindfolded walking sessions at Fidelco
+                │   ├── Blindfold in Rochester(21-18)/
+                │   │   ├── images/  - Photos from blindfolded walking sessions in Rochester
+                │   │   └── videos/  - Video recordings from blindfolded walking sessions in Rochester
+                │   ├── Transcript/
+                │   │   ├── Interview_w_GDT/     - Interview transcripts with guide dog trainers
+                │   │   └── Interview_w_subject/ - Interview transcripts with guide dog handlers
+                │   └── interview_media(24-7)/
+                │       ├── images/  - Photos captured during interview sessions
+                │       └── videos/  - Video recordings from interview sessions
+                └── IRB-5(76)/
+                    ├── S01-Day01-Library/       - Observation videos from library navigation
+                    ├── S01-Day02-Northampton/   - Observation videos from Northampton navigation
+                    ├── S01-Day03/               - Observation videos from Day 3 sessions
+                    ├── S01-Day03-LibraryIndoors/  - Indoor library navigation observations
+                    └── S01-Day10-LibraryHouse/  - Library and house navigation observations
+              </code>
+            </pre>
         </div>
       </div>
     </div>
