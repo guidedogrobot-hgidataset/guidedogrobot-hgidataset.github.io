@@ -240,14 +240,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Research on mobile assistive systems for blind and low-vision (BLV) individuals spans five decades, beginning in 1976. However, mobile navigation systems that mimic how guide dogs assist BLV people remain rare. One critical missing component is the lack of understanding of how guide dogs and BLV handlers navigate real-world environments. In this paper, we address this gap by defining a guide-dog–inspired navigation setup based on a comprehensive human study involving interviews with 26 guide dog handlers, 2 white cane users, 5 guide dog trainers, 1 O\&M trainer, 10 hours of observing guide dog–assisted walking, and 3 hours of blindfolded walking sessions guided by six different guide dogs.
+            Research on mobile assistive systems for blind and low-vision (BLV) individuals spans nearly five decades. While commendable progress has been made in user-centric research, references that directly inform robot navigation design remain rare. To bridge this gap, we conducted a comprehensive human study involving interviews with 26 guide dog handlers, 4 white cane users, 9 guide dog trainers, and 1 O\&M trainer, along with 15+ hours of observing guide dog–assisted walking. After de-identification, we open-sourced the dataset to promote human-centered development and informed decision-making for assistive systems for BLV people. Building on insights from this formative study, we developed <span style="font-variant: small-caps;">GuideNav</span>, a vision-only, teach-and-repeat navigation system. Inspired by how guide dogs are trained and assist their handlers, <span style="font-variant: small-caps;">GuideNav</span> autonomously repeats a path demonstrated by a sighted person using a robot. The system constructs a topological representation of the taught route, integrates visual place recognition with temporal filtering, and employs a learned relative pose estimator to compute navigation actions—all without relying on costly, heavy, power-hungry sensors such as LiDAR. In field tests, <span style="font-variant: small-caps;">GuideNav</span> consistently achieved kilometer-scale route following across five outdoor environments, maintaining reliability despite substantial scene variations between teach and repeat runs. A user study with 3 guide dog handlers and 1 guide dog trainer further confirmed the system's feasibility, marking (to our knowledge) the first demonstration of a quadruped mobile system retrieving a path in a manner comparable to guide dogs.
           </p>
-          <p>
-          Based on these findings, we developed <b>GuideNav</b>, a vision-only, teach-and-repeat navigation system. Similar to how guide dogs are trained and assist their handlers, GuideNav autonomously repeats a path demonstrated by a sighted person using a robot. The system builds a topological representation of the taught route, integrates visual place recognition with temporal filtering, and employs a learned relative pose estimator to provide input to the controller—all without relying on heavy, power-hungry sensors such as LiDAR.
-          </p>
-          <p>
-          In field tests, GuideNav consistently achieved kilometer-scale route following across five outdoor environments, maintaining reliability despite noticeable appearance changes between teach and repeat runs. A user study with 3 guide dog handlers and one guide dog trainer confirmed the system’s feasibility, marking (to our knowledge) the first demonstration of a quadruped mobile system retrieving a path in a manner comparable to guide dogs.
-        </p>
         </div>
       </div>
     </div>
@@ -537,7 +531,8 @@
     <h2 class="title">BibTeX</h2>
     <pre><code>{
     Bibtex citation will be added after the review process.
-  }</code></pre>
+}
+</code></pre>
   </div>
 </section>
 
