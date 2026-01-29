@@ -112,7 +112,7 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>University of Massachusetts Amherst,</span>
-            <span class="author-block"><sup>2</sup>Daegu Gyeongbuk Institute of Science and Technology,</span>
+            <span class="author-block"><sup>2</sup>DGIST,</span>
             <span class="author-block"><sup>3</sup>University of Maine,</span>
             <span class="author-block"><sup>4</sup>The University of Texas at Austin,</span>
           </div>
@@ -250,34 +250,6 @@
 </section>
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Research on mobile assistive systems for blind and low-vision (BLV) individuals spans nearly five decades. While commendable progress has been made in user-centric research, references that directly inform robot navigation design remain rare. To bridge this gap, we conducted a comprehensive human study involving interviews with 26 guide dog handlers, 4 white cane users, 9 guide dog trainers, and 1 O\&M trainer, along with 15+ hours of observing guide dog–assisted walking. After de-identification, we open-sourced the dataset to promote human-centered development and informed decision-making for assistive systems for BLV people. Building on insights from this formative study, we developed <span style="font-variant: small-caps;">GuideNav</span>, a vision-only, teach-and-repeat navigation system. Inspired by how guide dogs are trained and assist their handlers, <span style="font-variant: small-caps;">GuideNav</span> autonomously repeats a path demonstrated by a sighted person using a robot. The system constructs a topological representation of the taught route, integrates visual place recognition with temporal filtering, and employs a learned relative pose estimator to compute navigation actions—all without relying on costly, heavy, power-hungry sensors such as LiDAR. In field tests, <span style="font-variant: small-caps;">GuideNav</span> consistently achieved kilometer-scale route following across five outdoor environments, maintaining reliability despite substantial scene variations between teach and repeat runs. A user study with 3 guide dog handlers and 1 guide dog trainer further confirmed the system's feasibility, marking (to our knowledge) the first demonstration of a quadruped mobile system retrieving a path in a manner comparable to guide dogs.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-
-<!--     <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/9Y7Gvbw0qr4"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-     --></div>
-    <!--/ Paper video. -->
-  </div> 
-</section>
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Dataset Description -->
@@ -574,6 +546,34 @@
 </section>
 
 
+<section class="section" id="Acknowledgements">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">Acknowledgements</h2>
+        <div class="content has-text-justified">
+          <p>
+            This dataset was built over several years, and throughout this journey, there are many people to acknowledge.
+          </p>
+          <p>
+            First and foremost, I would like to express my sincere gratitude to all the guide dog handlers who generously shared their invaluable insights about their daily interactions, and to the guide dog trainers who provided detailed knowledge of the training process, evaluation methods, and hands-on guidance during blindfolded walking sessions. As someone who led and participated in all interviews and observations, I deeply value every conversation we had about accessible mobility. The wealth of knowledge we gathered was made possible by our shared commitment to developing mobility assistive robots that promote independent travel.
+          </p>
+          <p>
+            I would also like to thank my advisor, Prof. Donghyun Kim, for his unwavering support—from collecting data together during observation sessions to providing invaluable guidance throughout this research. I am equally grateful to the co-advisors: Prof. Sunghoon Ivan Lee, Prof. Joydeep Biswas, Prof. Nicholas Giudice, and Prof. Hee-Tae Jung, whose expertise enabled rich data analysis and whose mentorship guided us throughout this journey. The depth of our analysis and the continuation of this work would not have been possible without such a dedicated team.
+          </p>
+          <p>
+            Finally, I would like to thank Soowan Yang and Jahir Sadik Monon for their meticulous work in post-processing and compiling the data for open-source public release. This dataset truly represents a collaborative effort, and none of this would have been possible without everyone on the team.
+          </p>
+          <p style="text-align: right; font-style: italic;">
+            — Hochul Hwang
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
@@ -590,28 +590,18 @@
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
+      <a class="icon-link" href="https://www.kaggle.com/datasets/guidedogrobot/guidedata">
+        <i class="fas fa-database"></i>
       </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
+      <a class="icon-link" href="https://guidedogrobot-navigation.github.io/">
+        <i class="fas fa-robot"></i>
       </a>
     </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            The website (<a href="https://github.com/nerfies/nerfies.github.io">source code</a>) is from <a href="https://github.com/nerfies/nerfies.github.io"><span class="dnerf">Nerfies</span></a>.
           </p>
         </div>
       </div>
