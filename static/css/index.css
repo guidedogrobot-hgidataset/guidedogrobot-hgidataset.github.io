@@ -184,3 +184,20 @@ body {
 .collapsible-content {
   margin-left: 20px;
 }
+/* === Match profile site accent (#2563EB) === */
+.publication-authors a {
+   color: #2563EB !important;
+}
+.publication-authors a:hover {
+   color: #1D4ED8 !important;
+   text-decoration: underline;
+}
+.content a:not(.button) {
+   color: #2563EB !important;
+}
+.content a:not(.button):hover {
+   color: #1D4ED8 !important;
+}
+.tag.is-info {
+   background-color: #2563EB !important;
+}
